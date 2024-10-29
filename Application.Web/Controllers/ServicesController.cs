@@ -1,10 +1,12 @@
-﻿namespace Application.Web.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Application.Web.Controllers
 {
-    public class ServicesController
+    public class ServicesController : Controller
     {
-        public string Hello()
+        public IActionResult Index()
         {
-            return "This is my First";
+            return View();
         }
     }
 }
