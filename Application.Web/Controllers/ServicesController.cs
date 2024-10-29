@@ -18,7 +18,7 @@ namespace Application.Web.Controllers
             service.Price = "50.00";
             service.IsDeleted = false;
 
-            return View();
+            return View(service);
         }
     }
 }
